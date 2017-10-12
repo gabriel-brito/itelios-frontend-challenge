@@ -1,10 +1,15 @@
 .product-item {
     padding: 15px;
-    width: 25%;
-    height: auto;
+    width: 260px;
+    height:415px;
+    margin:10px 0;
     border: 1px solid lightgray;
     color:#778087;
     font-size:.85em;
+    overflow:hidden;
+    &:hover{
+    	height:470px;
+    }
 }
 .product-item img{
 	width:100%;
