@@ -5,7 +5,7 @@ const recommendationContainer = document.querySelector('#recommendation');
 function renderRecommendations(container, data){
 	container.innerHTML += `
 		<div class="product-item">
-			<img src="https://github.com/iteliosbrasil/itelios-frontend-challenge/blob/master/images/Mac-Mini-Apple-MGEN2BZ-A-com-Intel-Core-i5-Dual-Core-8GB-1TB-Leitor-de-Cartoes-HDMI-Wireless-AC-Bluetooth-4-0-e-OS-X-Yosemite-3865616.jpg?raw=true">
+			<img src="https://github.com/iteliosbrasil/itelios-frontend-challenge/blob/master/images/apple-macbook-air-13-i5-16ghz-8gb-128gb-ssd-mmgf2-11549005.jpg?raw=true">
 			<p>${data.name}</p>
 			<p>por <span>${data.price}</span></p>
 			<p>${data.productInfo.paymentConditions}</p>
@@ -19,7 +19,7 @@ function renderRecommendations(container, data){
 function renderProduct(container, data){
 	container.innerHTML = `
 		<div class="product-item">
-			<img src="https://github.com/iteliosbrasil/itelios-frontend-challenge/blob/master/images/Mac-Mini-Apple-MGEN2BZ-A-com-Intel-Core-i5-Dual-Core-8GB-1TB-Leitor-de-Cartoes-HDMI-Wireless-AC-Bluetooth-4-0-e-OS-X-Yosemite-3865616.jpg?raw=true">
+			<img src="https://github.com/iteliosbrasil/itelios-frontend-challenge/blob/master/images/apple-macbook-air-13-i5-16ghz-8gb-128gb-ssd-mmgf2-11549005.jpg?raw=true">
 			<p>${data.name}</p>
 			<p>por <span>${data.price}</span></p>
 			<p>${data.productInfo.paymentConditions}</p>
