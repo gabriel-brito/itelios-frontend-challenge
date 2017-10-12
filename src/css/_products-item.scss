@@ -1,14 +1,15 @@
 .product-item {
     padding: 15px;
     width: 260px;
-    height:415px;
+    height:auto;
     margin:10px 0;
     border: 1px solid lightgray;
     color:#778087;
     font-size:.85em;
-    overflow:hidden;
     &:hover{
-    	height:470px;
+    	.cart{
+    		display:block;
+    	}
     }
 }
 .product-item img{
