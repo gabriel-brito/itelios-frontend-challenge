@@ -35,7 +35,6 @@ function fetchProduct(url){
     .then(res => res.json())
     .then(res => res.data)
     .then(product => {
-    	console.log(product);
     	let content = product.item;
     	renderProduct(visitedContainer, content);
     	product.recommendation.map(item => {
