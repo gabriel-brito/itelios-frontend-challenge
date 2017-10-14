@@ -1,6 +1,16 @@
+//Helpers
 @import 'reset';
 @import 'typography';
+
+//Main container
 @import 'main';
+
+//Recommendations container
 @import 'recommendations';
+
+//Product and product recommendations
 @import 'products-item';
-@import 'cart-button'
+@import 'cart-button';
+
+//Media Queries
+@import 'queries';
