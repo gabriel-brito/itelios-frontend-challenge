@@ -19,7 +19,6 @@ function fetchProduct(url) {
 		return res.data;
 	}).then(function (product) {
 		var content = product.item;
-		console.log('Hello!');
 		renderProduct(visitedContainer, content);
 		product.recommendation.map(function (item) {
 			renderRecommendations(recommendationContainer, item);
