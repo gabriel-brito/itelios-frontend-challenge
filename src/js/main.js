@@ -1,8 +1,8 @@
-const url = 'https://nothing-special-2d3c2.firebaseio.com/0.json';
-const visitedContainer = document.querySelector('#visited');
-const recommendationContainer = document.querySelector('#recommendation');
+const url = "https://nothing-special-2d3c2.firebaseio.com/0.json";
+const visitedContainer = document.querySelector("#visited");
+const recommendationContainer = document.querySelector("#recommendation");
 
-function renderRecommendations(container, data){
+function renderRecommendations(container, data) {
 	container.innerHTML += `
 		<div class="product-item">
 			<img src="https://github.com/iteliosbrasil/itelios-frontend-challenge/blob/master/images/apple-macbook-air-13-i5-16ghz-8gb-128gb-ssd-mmgf2-11549005.jpg?raw=true">
@@ -16,7 +16,7 @@ function renderRecommendations(container, data){
 	`;
 }
 
-function renderProduct(container, data){
+function renderProduct(container, data) {
 	container.innerHTML = `
 		<div class="product-item">
 			<img src="https://github.com/iteliosbrasil/itelios-frontend-challenge/blob/master/images/apple-macbook-air-13-i5-16ghz-8gb-128gb-ssd-mmgf2-11549005.jpg?raw=true">
@@ -30,18 +30,14 @@ function renderProduct(container, data){
 	`;
 }
 
-function fetchProduct(url){
-	fetch(url)
-    .then(res => res.json())
-    .then(res => res.data)
-    .then(product => {
-    	let content = product.item;
-    	renderProduct(visitedContainer, content);
-    	product.recommendation.map(item => {
-    		renderRecommendations(recommendationContainer, item);
-    	})
+function fetchProduct(url) {
+	fetch(url).then(res => res.json()).then(res => res.data).then(product => {
+		let content = product.item;
+		renderProduct(visitedContainer, content);
+		product.recommendation.map(item => {
+			renderRecommendations(recommendationContainer, item);
+		});
 	});
 }
-
 
 window.onload = fetchProduct(url);
