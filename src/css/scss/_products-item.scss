@@ -30,7 +30,10 @@
 }
 
 .product-item p{
-	padding: 4px 0;	
+	padding: 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-item span{
