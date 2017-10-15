@@ -3,7 +3,7 @@
 Doing the challenge to join the Itelios Team! :)
 
 <p align="center">
-	<img src="./github/itelios-logo.png" alt="Itelios Logo">
+	<img src="./doc/itelios-logo.png" alt="Itelios Logo">
 </p>
 
 ## What have been used until now:
@@ -12,7 +12,7 @@ Doing the challenge to join the Itelios Team! :)
 
 * CSS
 
-* Vanilla JavaScript (ECMA Script 6)
+* Vanilla JavaScript
 
 
 ## I've been using this patterns to make a clean code structure:
@@ -26,7 +26,9 @@ Doing the challenge to join the Itelios Team! :)
 * Babel (to add ECMAScript6 support to older browsers :D)
 
 
-## how it works? It's simple! Follow the instructions bellow:
+## how it works? 
+
+It's simple! Follow the instructions bellow:
 
 First of all, you need to clone this repo with:
 
@@ -46,11 +48,12 @@ Up the server with:
 
 ```
 http-server
+```
 
 Now you can access by your browser with your on location!
 
-Ex: 192.168.0.86:8080
-```
+Ex: localhost:8080
+
 
 And now you can access the project on your localhost!<br>
 Simple, not?

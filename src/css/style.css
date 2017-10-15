@@ -42,7 +42,8 @@ h3 {
   -o-transition: .5s ease;
   transition: .5s ease; }
   .product-item:hover {
-    background: linear-gradient(#f2f2f2, #ffffff); }
+    background: linear-gradient(#f2f2f2, #ffffff);
+    cursor: pointer; }
     .product-item:hover .cart {
       display: block; }
 
@@ -71,7 +72,8 @@ h3 {
   margin: 15px auto; }
   .cart:hover {
     border-left: 5px solid #ff6702;
-    background-image: url("../images/add_shopping_cart-orange.png"); }
+    background-image: url("../images/add_shopping_cart-orange.png");
+    cursor: pointer; }
 
 .cart a {
   text-decoration: none;
