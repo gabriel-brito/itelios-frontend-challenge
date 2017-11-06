@@ -4,9 +4,6 @@
   "description": "Itelios front-end challenge",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/js -d dist"
-  },
-  "scripts":{
     "build": "babel --presets es2015 src/js -d dist"
   },
   "repository": {
